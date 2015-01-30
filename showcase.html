@@ -36,57 +36,89 @@
 			</div>
 		</nav>
 		
-    <div class="container">
-      <h2>Default Slider</h2>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+		<div class="container">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="http://extremecss.com/demos/bs_carousel/images/img1.jpg" alt="Apple iPhone 5S" width="760" height="345">
-            <div class="carousel-caption">
-				<div class="container-fluid container-shaded">
-              <h3>Academic Java Programs</h3>
-              <p>The iPhone 5s isn't a radical departure from its predecessor in body (unless you count a new gold color), but under the hood are a number of changes that give Apple's newest flagship some real firepower, with the best still yet to come. </p>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<!--img src="https://gist.github.com/mcprog/0a35b63668211ec88a1e.js" alt="Apple iPhone 5S" width="760" height="345"-->
+						<script src="https://gist.github.com/mcprog/0a35b63668211ec88a1e.js" id="script-img"></script>
+						<div class="carousel-caption">
+							<div class="container-fluid container-shaded">
+								<h3>Academic Java Programs</h3>
+									<p>I create Java programs to help me work out math and science programs. Many of these programs are rudimentary but are helpful to complete a specific task.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="http://www.badlogicgames.com/wordpress/wp-content/uploads/2011/05/libGDX-RedGlossyNoReflection.png" alt="Samsung Galaxy Note 3" width="760" height="345">
+						<div class="carousel-caption">
+							<div class="container-fluid container-shaded">
+								<h3>libGDX Programs</h3>
+									<p>I make <a href="http://libgdx.badlogicgames.com/" target="_blank">libGDX</a> games and applications. Currently the only downloadable game I have is "Ragnar".</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="http://i1-news.softpedia-static.com/images/news2/Android-5-0-Lollipop-What-s-New-and-Improved-462269-2.jpg" alt="Apple iPhone 5S" width="760" height="345">
+							<div class="carousel-caption ">
+								<div class="container-fluid container-shaded">
+									<h3>Android Lollipop Applications</h3>
+										<p>Using the new material design specs, I make Android Lollipop Applications. No Apps are published at this time</p>
+										<a href="#general-content" class="btn btn-info" id="btn-android">Learn More</a>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+		
+		<div class="container-fluid container-margined">
+			<div class="jumbotron">
+				<h1>Ragnar</h1>      
+				<p>...In case you were wondering</p> 
+				<button class="btn btn-lg">Download Ragnar</button>
+			</div>
+		</div>
+		<section id="general-content">
+		<div class="container-fluid">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#java">Java Programs</a></li>
+				<li><a data-toggle="tab" href="#libgdx">libGDX Programs</a></li>
+				<li id="tab-android"><a data-toggle="tab" href="#android">Android Applications</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="java" class="tab-pane fade in active">
+					<h3>Java Programs</h3>
+					<p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+				</div>
+				<div id="libgdx" class="tab-pane fade">
+					<h3>libGDX Programs</h3>
+					<p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+				</div>
+				<div id="android" class="tab-pane fade">
+					<h3>Android Applications</h3>
+					<p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis at erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in, pharetra et dolor. Fusce nec velit velit. Pellentesque consectetur eros.</p>
 				</div>
 			</div>
-          </div>
-          <div class="item">
-            <img src="http://hd.wallpaperswide.com/thumbs/most_beautiful_woman-t2.jpg" alt="Samsung Galaxy Note 3" width="760" height="345">
-            <div class="carousel-caption">
-				<div class="container-fluid container-shaded">
-              <h3>libGDX Programs</h3>
-              <p>Similar to the updates Samsung made to the Galaxy S4, the new Note 3 features a bigger display while remaining very similar in size to the Note II; the biggest change in the Note 3 is the refinement of the S Pen and its accompanying software.</p>
-				</div>
-			</div>
-          </div>
-          <div class="item">
-            <img src="http://extremecss.com/demos/bs_carousel/images/img3.jpg" alt="Apple iPhone 5S" width="760" height="345">
-            <div class="carousel-caption ">
-				<div class="container-fluid container-shaded">
-					<h3>Android Lollipop Applications</h3>
-					<p>Sony's got a plan and it's sticking to it - while other makers pile software feature upon feature, the Japanese focus on their historical strengths, such as beautiful, durable design, photographic excellence and enviable display tech. That in short is what the Xperia Z1 is all about.</p>
-				</div>
-			</div>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div>
-	popo
-
+		</div>
+		</section>
+		
+		<script type="text/javascript" src="js//app.js"></script>
 	<body>
 </html>

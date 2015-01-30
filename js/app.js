@@ -18,4 +18,9 @@ $(document).ready(function() {
 			}, 'fast');
 		//}
 	});
+	
+	$("#btn-android").click(function() {
+		$('#tab-android').siblings().removeClass('active');
+		$('#tab-android').addClass('active');
+	});
 });
